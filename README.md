@@ -2,7 +2,8 @@
 
 Base project with esbuild and typescript for simple react apps.
 
-Goal is to have a minimal project setup and quick start when I just want to add reactiveness to a backend/fullstack project. Of course this can also be the base of a larger frontend project with esbuild's plugins and toolchain.
+The goal is to provide a minimal project setup for quickly adding interactivity to a backend or fullstack project.
+This setup can also serve as the foundation for a larger frontend project, leveraging esbuild's plugins and toolchain.
 
 ## Getting started
 

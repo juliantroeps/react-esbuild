@@ -2,6 +2,7 @@
   "name": "react-esbuild",
   "version": "1.0.0",
   "description": "React Base",
+  "author": "Julian Troeps",
   "license": "MIT",
   "scripts": {
     "start": "node esbuild.js",
