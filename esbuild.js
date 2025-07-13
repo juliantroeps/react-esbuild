@@ -57,12 +57,19 @@ if (!isProduction) {
           port: 8000,
         })
         .then((server) => {
-          console.log(
-            `Server started on http://localhost:${server.host}:${server.port}`
-          );
+          console.log(`Server started on http://localhost:${server.port}`);
         });
     })
     .catch(() => process.exit(1));
 } else {
+  // Clean the output directory before building
+  const fs = require("fs");
+  const path = require("path");
+  const outDir = path.resolve(__dirname, "public");
+
+  if (fs.existsSync(outDir)) {
+    fs.rmSync(outDir, { recursive: true, force: true });
+  }
+
   esbuild.build(config).catch(() => process.exit(1));
 }
